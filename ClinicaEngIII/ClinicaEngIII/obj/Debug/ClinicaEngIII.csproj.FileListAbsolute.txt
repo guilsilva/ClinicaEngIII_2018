@@ -1,0 +1,15 @@
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\bin\Debug\ClinicaEngIII.exe.config
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\bin\Debug\ClinicaEngIII.exe
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\bin\Debug\ClinicaEngIII.pdb
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.csprojAssemblyReference.cache
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_login.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.Properties.Resources.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.csproj.GenerateResource.cache
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.csproj.CoreCompileInputs.cache
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.exe
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.pdb
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_MenuPrincipal.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.Load.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Medico.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_TrocaSenha.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Anamnese.resources
