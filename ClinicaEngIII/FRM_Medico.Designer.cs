@@ -42,7 +42,7 @@
             this.TBEndereco = new System.Windows.Forms.TextBox();
             this.TBTelefone = new System.Windows.Forms.TextBox();
             this.TBSalario = new System.Windows.Forms.TextBox();
-            this.TBHrAtend = new System.Windows.Forms.TextBox();
+            this.TBCPF = new System.Windows.Forms.TextBox();
             this.TBArea = new System.Windows.Forms.TextBox();
             this.TBSexo = new System.Windows.Forms.TextBox();
             this.TBCRM = new System.Windows.Forms.TextBox();
@@ -128,9 +128,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(42, 264);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(162, 17);
+            this.label7.Size = new System.Drawing.Size(38, 17);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Horário de Atendimento:";
+            this.label7.Text = "CPF:";
             // 
             // label8
             // 
@@ -144,7 +144,7 @@
             // 
             // TBNome
             // 
-            this.TBNome.Location = new System.Drawing.Point(210, 43);
+            this.TBNome.Location = new System.Drawing.Point(129, 43);
             this.TBNome.Name = "TBNome";
             this.TBNome.Size = new System.Drawing.Size(261, 20);
             this.TBNome.TabIndex = 8;
@@ -153,7 +153,7 @@
             // 
             this.TBIdade.BackColor = System.Drawing.Color.White;
             this.TBIdade.Enabled = false;
-            this.TBIdade.Location = new System.Drawing.Point(210, 131);
+            this.TBIdade.Location = new System.Drawing.Point(129, 131);
             this.TBIdade.Name = "TBIdade";
             this.TBIdade.Size = new System.Drawing.Size(261, 20);
             this.TBIdade.TabIndex = 9;
@@ -162,7 +162,7 @@
             // 
             this.TBEndereco.BackColor = System.Drawing.Color.White;
             this.TBEndereco.Enabled = false;
-            this.TBEndereco.Location = new System.Drawing.Point(210, 183);
+            this.TBEndereco.Location = new System.Drawing.Point(129, 183);
             this.TBEndereco.Name = "TBEndereco";
             this.TBEndereco.Size = new System.Drawing.Size(261, 20);
             this.TBEndereco.TabIndex = 11;
@@ -171,7 +171,7 @@
             // 
             this.TBTelefone.BackColor = System.Drawing.Color.White;
             this.TBTelefone.Enabled = false;
-            this.TBTelefone.Location = new System.Drawing.Point(210, 157);
+            this.TBTelefone.Location = new System.Drawing.Point(129, 157);
             this.TBTelefone.Name = "TBTelefone";
             this.TBTelefone.Size = new System.Drawing.Size(261, 20);
             this.TBTelefone.TabIndex = 10;
@@ -180,25 +180,25 @@
             // 
             this.TBSalario.BackColor = System.Drawing.Color.White;
             this.TBSalario.Enabled = false;
-            this.TBSalario.Location = new System.Drawing.Point(210, 287);
+            this.TBSalario.Location = new System.Drawing.Point(129, 287);
             this.TBSalario.Name = "TBSalario";
             this.TBSalario.Size = new System.Drawing.Size(261, 20);
             this.TBSalario.TabIndex = 15;
             // 
-            // TBHrAtend
+            // TBCPF
             // 
-            this.TBHrAtend.BackColor = System.Drawing.Color.White;
-            this.TBHrAtend.Enabled = false;
-            this.TBHrAtend.Location = new System.Drawing.Point(210, 261);
-            this.TBHrAtend.Name = "TBHrAtend";
-            this.TBHrAtend.Size = new System.Drawing.Size(261, 20);
-            this.TBHrAtend.TabIndex = 14;
+            this.TBCPF.BackColor = System.Drawing.Color.White;
+            this.TBCPF.Enabled = false;
+            this.TBCPF.Location = new System.Drawing.Point(129, 261);
+            this.TBCPF.Name = "TBCPF";
+            this.TBCPF.Size = new System.Drawing.Size(261, 20);
+            this.TBCPF.TabIndex = 14;
             // 
             // TBArea
             // 
             this.TBArea.BackColor = System.Drawing.Color.White;
             this.TBArea.Enabled = false;
-            this.TBArea.Location = new System.Drawing.Point(210, 235);
+            this.TBArea.Location = new System.Drawing.Point(129, 235);
             this.TBArea.Name = "TBArea";
             this.TBArea.Size = new System.Drawing.Size(261, 20);
             this.TBArea.TabIndex = 13;
@@ -207,14 +207,14 @@
             // 
             this.TBSexo.BackColor = System.Drawing.Color.White;
             this.TBSexo.Enabled = false;
-            this.TBSexo.Location = new System.Drawing.Point(210, 209);
+            this.TBSexo.Location = new System.Drawing.Point(129, 209);
             this.TBSexo.Name = "TBSexo";
             this.TBSexo.Size = new System.Drawing.Size(261, 20);
             this.TBSexo.TabIndex = 12;
             // 
             // TBCRM
             // 
-            this.TBCRM.Location = new System.Drawing.Point(210, 69);
+            this.TBCRM.Location = new System.Drawing.Point(129, 69);
             this.TBCRM.Name = "TBCRM";
             this.TBCRM.Size = new System.Drawing.Size(261, 20);
             this.TBCRM.TabIndex = 17;
@@ -233,7 +233,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(208, 28);
+            this.label10.Location = new System.Drawing.Point(127, 28);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(258, 12);
             this.label10.TabIndex = 19;
@@ -242,7 +242,7 @@
             // PBPesquisar
             // 
             this.PBPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("PBPesquisar.Image")));
-            this.PBPesquisar.Location = new System.Drawing.Point(436, 95);
+            this.PBPesquisar.Location = new System.Drawing.Point(355, 95);
             this.PBPesquisar.Name = "PBPesquisar";
             this.PBPesquisar.Size = new System.Drawing.Size(30, 30);
             this.PBPesquisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -253,7 +253,7 @@
             // PBEditar
             // 
             this.PBEditar.Image = ((System.Drawing.Image)(resources.GetObject("PBEditar.Image")));
-            this.PBEditar.Location = new System.Drawing.Point(400, 313);
+            this.PBEditar.Location = new System.Drawing.Point(319, 313);
             this.PBEditar.Name = "PBEditar";
             this.PBEditar.Size = new System.Drawing.Size(30, 30);
             this.PBEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -264,7 +264,7 @@
             // PBLimpar
             // 
             this.PBLimpar.Image = ((System.Drawing.Image)(resources.GetObject("PBLimpar.Image")));
-            this.PBLimpar.Location = new System.Drawing.Point(400, 95);
+            this.PBLimpar.Location = new System.Drawing.Point(319, 95);
             this.PBLimpar.Name = "PBLimpar";
             this.PBLimpar.Size = new System.Drawing.Size(30, 30);
             this.PBLimpar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -275,7 +275,7 @@
             // PBConfirmar
             // 
             this.PBConfirmar.Image = ((System.Drawing.Image)(resources.GetObject("PBConfirmar.Image")));
-            this.PBConfirmar.Location = new System.Drawing.Point(400, 313);
+            this.PBConfirmar.Location = new System.Drawing.Point(319, 313);
             this.PBConfirmar.Name = "PBConfirmar";
             this.PBConfirmar.Size = new System.Drawing.Size(30, 30);
             this.PBConfirmar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -286,7 +286,7 @@
             // PBCancelar
             // 
             this.PBCancelar.Image = ((System.Drawing.Image)(resources.GetObject("PBCancelar.Image")));
-            this.PBCancelar.Location = new System.Drawing.Point(364, 313);
+            this.PBCancelar.Location = new System.Drawing.Point(283, 313);
             this.PBCancelar.Name = "PBCancelar";
             this.PBCancelar.Size = new System.Drawing.Size(30, 30);
             this.PBCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -298,7 +298,7 @@
             // 
             this.PBVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBVoltar.BackgroundImage")));
             this.PBVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBVoltar.Location = new System.Drawing.Point(436, 313);
+            this.PBVoltar.Location = new System.Drawing.Point(355, 313);
             this.PBVoltar.Name = "PBVoltar";
             this.PBVoltar.Size = new System.Drawing.Size(30, 30);
             this.PBVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -311,7 +311,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(533, 357);
+            this.ClientSize = new System.Drawing.Size(445, 357);
             this.Controls.Add(this.PBVoltar);
             this.Controls.Add(this.PBCancelar);
             this.Controls.Add(this.PBConfirmar);
@@ -322,7 +322,7 @@
             this.Controls.Add(this.TBCRM);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.TBSalario);
-            this.Controls.Add(this.TBHrAtend);
+            this.Controls.Add(this.TBCPF);
             this.Controls.Add(this.TBArea);
             this.Controls.Add(this.TBSexo);
             this.Controls.Add(this.TBEndereco);
@@ -368,7 +368,7 @@
         private System.Windows.Forms.TextBox TBEndereco;
         private System.Windows.Forms.TextBox TBTelefone;
         private System.Windows.Forms.TextBox TBSalario;
-        private System.Windows.Forms.TextBox TBHrAtend;
+        private System.Windows.Forms.TextBox TBCPF;
         private System.Windows.Forms.TextBox TBArea;
         private System.Windows.Forms.TextBox TBSexo;
         private System.Windows.Forms.TextBox TBCRM;

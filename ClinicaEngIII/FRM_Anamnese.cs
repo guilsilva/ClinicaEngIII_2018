@@ -18,9 +18,16 @@ namespace ClinicaEngIII
             InitializeComponent();
         }
 
+        public FRM_Anamnese(string nome, string CPF)
+        {
+            InitializeComponent();
+            TBNomePaciente.Text = nome;
+            TBCPFPaciente.Text = CPF;
+        }
+
         private void FRM_Anamnese_Load(object sender, EventArgs e)
         {
-            this.Height = 175;
+            this.Height = 174;
         }
 
         private void PBLimpar_Click(object sender, EventArgs e)
@@ -31,9 +38,9 @@ namespace ClinicaEngIII
         private void PBPesquisar_Click(object sender, EventArgs e)
         {
             //Se o usuário pesquisado Existir
-            if (true)
+            if (false)
             {
-                //Se existir dados cai no IF
+                //Se existir dados
                 if (false)
                 {
                     var returno = MessageBox.Show
@@ -54,16 +61,25 @@ namespace ClinicaEngIII
                     this.Height = 554;
                 }
             }
-            else
+            //Se o usuário não existir
+            else if(true)
             {
                 var retorno = 
                     MessageBox.Show("Paciente não cadastrado no Sistema! \n Deseja Cadastrar este Paciente?", 
                     "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if(retorno == DialogResult.Yes)
                 {
-                    //FRM_Paciente frmPac = new FRM_Paciente();
-                    //frmPac.Show();
+                    FRM_Paciente frmPac = new FRM_Paciente();
+                    frmPac.Show();
+                    this.Close();
                 }
+            }
+            //Se a consulta retornar mais de um dado
+            else
+            {
+                FRM_ConsultaAnamnese frmCA = new FRM_ConsultaAnamnese();
+                frmCA.Show();
+                this.Close();
             }
         }
 
@@ -72,6 +88,136 @@ namespace ClinicaEngIII
             if (CBDrogasSim.Checked)
             {
                 TBDescDrogas.Enabled = true;
+                TBDescDrogas.Text = String.Empty;
+                CBDrogasNao.Checked = false;
+            }
+            else
+            {
+                TBDescDrogas.Enabled = false;
+                TBDescDrogas.Text = "Quais?";
+            }
+        }
+
+        private void CBAlergiasSim_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBAlergiasSim.Checked)
+            {
+                TBDescAlergia.Enabled = true;
+                TBDescAlergia.Text = String.Empty;
+                CBAlergiaNao.Checked = false;
+            }
+            else
+            {
+                TBDescAlergia.Enabled = false;
+                TBDescAlergia.Text = "Quais?";
+            }
+        }
+
+        private void CBCirurgiaSim_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBCirurgiaSim.Checked)
+            {
+                TBDescCirurgia.Enabled = true;
+                TBDescCirurgia.Text = String.Empty;
+                CBCirurgiaNao.Checked = false;
+            }
+            else
+            {
+                TBDescCirurgia.Enabled = false;
+                TBDescCirurgia.Text = "Quais?";
+            }
+        }
+
+        private void CBMedicamentoSim_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBMedicamentoSim.Checked)
+            {
+                TBDescMedicamento.Enabled = true;
+                TBDescMedicamento.Text = String.Empty;
+                CBMedicamentoNao.Checked = false;
+            }
+            else
+            {
+                TBDescMedicamento.Enabled = false;
+                TBDescMedicamento.Text = "Quais?";
+            }
+        }
+
+        private void CBDoencaSim_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBDoencaSim.Checked)
+            {
+                TBDescDoenca.Enabled = true;
+                TBDescDoenca.Text = String.Empty;
+                CBDoencaNao.Checked = false;
+            }
+            else
+            {
+                TBDescDoenca.Enabled = false;
+                TBDescDoenca.Text = "Quais?";
+            }
+        }
+
+        private void CBGravidaSim_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBGravidaSim.Checked)
+            {
+                TBQntdSemanas.Enabled = true;
+                TBQntdSemanas.Text = String.Empty;
+                CBGravidaNao.Checked = false;
+            }
+            else
+            {
+                TBQntdSemanas.Enabled = false;
+                TBQntdSemanas.Text = "Quais?";
+            }
+        }
+
+        private void CBDrogasNao_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBDrogasNao.Checked)
+            {
+                CBDrogasSim.Checked = false;
+            }
+        }
+
+        private void CBAlergiaNao_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBAlergiaNao.Checked)
+            {
+                CBAlergiasSim.Checked = false;
+            }
+        }
+
+        private void CBCirurgiaNao_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBCirurgiaNao.Checked)
+            {
+                CBCirurgiaSim.Checked = false;
+            }
+        }
+
+        private void CBMedicamentoNao_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBMedicamentoNao.Checked)
+            {
+                CBMedicamentoSim.Checked = false;
+            }
+        }
+
+        private void CBDoencaNao_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBDoencaNao.Checked)
+            {
+                CBDoencaSim.Checked = false;
+            }
+        }
+
+        private void CBGravidaNao_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CBGravidaNao.Checked)
+            {
+                CBGravidaSim.Checked = false;
             }
         }
     }

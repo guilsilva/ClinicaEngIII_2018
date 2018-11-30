@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_Anamnese));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TBNomePaciente = new System.Windows.Forms.TextBox();
+            this.TBCPFPaciente = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,16 +55,16 @@
             this.PBConfirmar = new System.Windows.Forms.PictureBox();
             this.PBEditar = new System.Windows.Forms.PictureBox();
             this.CBDrogasSim = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.CBDrogasNao = new System.Windows.Forms.CheckBox();
+            this.CBAlergiaNao = new System.Windows.Forms.CheckBox();
             this.CBAlergiasSim = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.CBCirurgiaNao = new System.Windows.Forms.CheckBox();
             this.CBCirurgiaSim = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.CBMedicamentoNao = new System.Windows.Forms.CheckBox();
             this.CBMedicamentoSim = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.CBDoencaNao = new System.Windows.Forms.CheckBox();
             this.CBDoencaSim = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.CBGravidaNao = new System.Windows.Forms.CheckBox();
             this.CBGravidaSim = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PBLimpar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBPesquisar)).BeginInit();
@@ -94,19 +94,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "CPF:";
             // 
-            // textBox1
+            // TBNomePaciente
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(291, 20);
-            this.textBox1.TabIndex = 2;
+            this.TBNomePaciente.Location = new System.Drawing.Point(91, 33);
+            this.TBNomePaciente.Name = "TBNomePaciente";
+            this.TBNomePaciente.Size = new System.Drawing.Size(291, 20);
+            this.TBNomePaciente.TabIndex = 2;
             // 
-            // textBox2
+            // TBCPFPaciente
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(291, 20);
-            this.textBox2.TabIndex = 3;
+            this.TBCPFPaciente.Location = new System.Drawing.Point(91, 59);
+            this.TBCPFPaciente.Name = "TBCPFPaciente";
+            this.TBCPFPaciente.Size = new System.Drawing.Size(291, 20);
+            this.TBCPFPaciente.TabIndex = 3;
             // 
             // label3
             // 
@@ -320,25 +320,27 @@
             this.CBDrogasSim.UseVisualStyleBackColor = true;
             this.CBDrogasSim.CheckedChanged += new System.EventHandler(this.CBDrogasSim_CheckedChanged);
             // 
-            // checkBox2
+            // CBDrogasNao
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(267, 134);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(46, 17);
-            this.checkBox2.TabIndex = 43;
-            this.checkBox2.Text = "Não";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.CBDrogasNao.AutoSize = true;
+            this.CBDrogasNao.Location = new System.Drawing.Point(267, 134);
+            this.CBDrogasNao.Name = "CBDrogasNao";
+            this.CBDrogasNao.Size = new System.Drawing.Size(46, 17);
+            this.CBDrogasNao.TabIndex = 43;
+            this.CBDrogasNao.Text = "Não";
+            this.CBDrogasNao.UseVisualStyleBackColor = true;
+            this.CBDrogasNao.CheckedChanged += new System.EventHandler(this.CBDrogasNao_CheckedChanged);
             // 
-            // checkBox3
+            // CBAlergiaNao
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(267, 183);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(46, 17);
-            this.checkBox3.TabIndex = 45;
-            this.checkBox3.Text = "Não";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.CBAlergiaNao.AutoSize = true;
+            this.CBAlergiaNao.Location = new System.Drawing.Point(267, 183);
+            this.CBAlergiaNao.Name = "CBAlergiaNao";
+            this.CBAlergiaNao.Size = new System.Drawing.Size(46, 17);
+            this.CBAlergiaNao.TabIndex = 45;
+            this.CBAlergiaNao.Text = "Não";
+            this.CBAlergiaNao.UseVisualStyleBackColor = true;
+            this.CBAlergiaNao.CheckedChanged += new System.EventHandler(this.CBAlergiaNao_CheckedChanged);
             // 
             // CBAlergiasSim
             // 
@@ -349,16 +351,18 @@
             this.CBAlergiasSim.TabIndex = 44;
             this.CBAlergiasSim.Text = "Sim";
             this.CBAlergiasSim.UseVisualStyleBackColor = true;
+            this.CBAlergiasSim.CheckedChanged += new System.EventHandler(this.CBAlergiasSim_CheckedChanged);
             // 
-            // checkBox5
+            // CBCirurgiaNao
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(267, 232);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(46, 17);
-            this.checkBox5.TabIndex = 47;
-            this.checkBox5.Text = "Não";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.CBCirurgiaNao.AutoSize = true;
+            this.CBCirurgiaNao.Location = new System.Drawing.Point(267, 232);
+            this.CBCirurgiaNao.Name = "CBCirurgiaNao";
+            this.CBCirurgiaNao.Size = new System.Drawing.Size(46, 17);
+            this.CBCirurgiaNao.TabIndex = 47;
+            this.CBCirurgiaNao.Text = "Não";
+            this.CBCirurgiaNao.UseVisualStyleBackColor = true;
+            this.CBCirurgiaNao.CheckedChanged += new System.EventHandler(this.CBCirurgiaNao_CheckedChanged);
             // 
             // CBCirurgiaSim
             // 
@@ -369,16 +373,18 @@
             this.CBCirurgiaSim.TabIndex = 46;
             this.CBCirurgiaSim.Text = "Sim";
             this.CBCirurgiaSim.UseVisualStyleBackColor = true;
+            this.CBCirurgiaSim.CheckedChanged += new System.EventHandler(this.CBCirurgiaSim_CheckedChanged);
             // 
-            // checkBox7
+            // CBMedicamentoNao
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(267, 279);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(46, 17);
-            this.checkBox7.TabIndex = 49;
-            this.checkBox7.Text = "Não";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.CBMedicamentoNao.AutoSize = true;
+            this.CBMedicamentoNao.Location = new System.Drawing.Point(267, 279);
+            this.CBMedicamentoNao.Name = "CBMedicamentoNao";
+            this.CBMedicamentoNao.Size = new System.Drawing.Size(46, 17);
+            this.CBMedicamentoNao.TabIndex = 49;
+            this.CBMedicamentoNao.Text = "Não";
+            this.CBMedicamentoNao.UseVisualStyleBackColor = true;
+            this.CBMedicamentoNao.CheckedChanged += new System.EventHandler(this.CBMedicamentoNao_CheckedChanged);
             // 
             // CBMedicamentoSim
             // 
@@ -389,16 +395,18 @@
             this.CBMedicamentoSim.TabIndex = 48;
             this.CBMedicamentoSim.Text = "Sim";
             this.CBMedicamentoSim.UseVisualStyleBackColor = true;
+            this.CBMedicamentoSim.CheckedChanged += new System.EventHandler(this.CBMedicamentoSim_CheckedChanged);
             // 
-            // checkBox9
+            // CBDoencaNao
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(267, 333);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(46, 17);
-            this.checkBox9.TabIndex = 51;
-            this.checkBox9.Text = "Não";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.CBDoencaNao.AutoSize = true;
+            this.CBDoencaNao.Location = new System.Drawing.Point(267, 333);
+            this.CBDoencaNao.Name = "CBDoencaNao";
+            this.CBDoencaNao.Size = new System.Drawing.Size(46, 17);
+            this.CBDoencaNao.TabIndex = 51;
+            this.CBDoencaNao.Text = "Não";
+            this.CBDoencaNao.UseVisualStyleBackColor = true;
+            this.CBDoencaNao.CheckedChanged += new System.EventHandler(this.CBDoencaNao_CheckedChanged);
             // 
             // CBDoencaSim
             // 
@@ -409,16 +417,18 @@
             this.CBDoencaSim.TabIndex = 50;
             this.CBDoencaSim.Text = "Sim";
             this.CBDoencaSim.UseVisualStyleBackColor = true;
+            this.CBDoencaSim.CheckedChanged += new System.EventHandler(this.CBDoencaSim_CheckedChanged);
             // 
-            // checkBox11
+            // CBGravidaNao
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(165, 385);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(46, 17);
-            this.checkBox11.TabIndex = 53;
-            this.checkBox11.Text = "Não";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.CBGravidaNao.AutoSize = true;
+            this.CBGravidaNao.Location = new System.Drawing.Point(165, 385);
+            this.CBGravidaNao.Name = "CBGravidaNao";
+            this.CBGravidaNao.Size = new System.Drawing.Size(46, 17);
+            this.CBGravidaNao.TabIndex = 53;
+            this.CBGravidaNao.Text = "Não";
+            this.CBGravidaNao.UseVisualStyleBackColor = true;
+            this.CBGravidaNao.CheckedChanged += new System.EventHandler(this.CBGravidaNao_CheckedChanged);
             // 
             // CBGravidaSim
             // 
@@ -429,6 +439,7 @@
             this.CBGravidaSim.TabIndex = 52;
             this.CBGravidaSim.Text = "Sim";
             this.CBGravidaSim.UseVisualStyleBackColor = true;
+            this.CBGravidaSim.CheckedChanged += new System.EventHandler(this.CBGravidaSim_CheckedChanged);
             // 
             // FRM_Anamnese
             // 
@@ -436,17 +447,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(429, 515);
-            this.Controls.Add(this.checkBox11);
+            this.Controls.Add(this.CBGravidaNao);
             this.Controls.Add(this.CBGravidaSim);
-            this.Controls.Add(this.checkBox9);
+            this.Controls.Add(this.CBDoencaNao);
             this.Controls.Add(this.CBDoencaSim);
-            this.Controls.Add(this.checkBox7);
+            this.Controls.Add(this.CBMedicamentoNao);
             this.Controls.Add(this.CBMedicamentoSim);
-            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.CBCirurgiaNao);
             this.Controls.Add(this.CBCirurgiaSim);
-            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.CBAlergiaNao);
             this.Controls.Add(this.CBAlergiasSim);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.CBDrogasNao);
             this.Controls.Add(this.CBDrogasSim);
             this.Controls.Add(this.PBVoltar);
             this.Controls.Add(this.PBCancelar);
@@ -469,8 +480,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TBCPFPaciente);
+            this.Controls.Add(this.TBNomePaciente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -492,8 +503,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TBNomePaciente;
+        private System.Windows.Forms.TextBox TBCPFPaciente;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -516,16 +527,16 @@
         private System.Windows.Forms.PictureBox PBConfirmar;
         private System.Windows.Forms.PictureBox PBEditar;
         private System.Windows.Forms.CheckBox CBDrogasSim;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox CBDrogasNao;
+        private System.Windows.Forms.CheckBox CBAlergiaNao;
         private System.Windows.Forms.CheckBox CBAlergiasSim;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox CBCirurgiaNao;
         private System.Windows.Forms.CheckBox CBCirurgiaSim;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox CBMedicamentoNao;
         private System.Windows.Forms.CheckBox CBMedicamentoSim;
-        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox CBDoencaNao;
         private System.Windows.Forms.CheckBox CBDoencaSim;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox CBGravidaNao;
         private System.Windows.Forms.CheckBox CBGravidaSim;
     }
 }

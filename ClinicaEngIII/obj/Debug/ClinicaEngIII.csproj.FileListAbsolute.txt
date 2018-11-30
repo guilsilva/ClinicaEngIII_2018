@@ -13,3 +13,5 @@ C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.Loa
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Medico.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_TrocaSenha.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Anamnese.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaAnamnese.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Paciente.resources
