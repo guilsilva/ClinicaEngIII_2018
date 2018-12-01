@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MenuPrincipal));
             this.BTMedico = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BTPaciente = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.BTAnamnese = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.BTMateriais = new System.Windows.Forms.Button();
             this.BTLogout = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,15 +52,16 @@
             this.BTMedico.UseVisualStyleBackColor = true;
             this.BTMedico.Click += new System.EventHandler(this.BTMedico_Click);
             // 
-            // button2
+            // BTPaciente
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(233, 60);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 115);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BTPaciente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTPaciente.BackgroundImage")));
+            this.BTPaciente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTPaciente.Location = new System.Drawing.Point(233, 60);
+            this.BTPaciente.Name = "BTPaciente";
+            this.BTPaciente.Size = new System.Drawing.Size(115, 115);
+            this.BTPaciente.TabIndex = 1;
+            this.BTPaciente.UseVisualStyleBackColor = true;
+            this.BTPaciente.Click += new System.EventHandler(this.BTPaciente_Click);
             // 
             // button3
             // 
@@ -103,15 +104,16 @@
             this.button6.TabIndex = 5;
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // BTMateriais
             // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.Location = new System.Drawing.Point(233, 208);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(115, 115);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = true;
+            this.BTMateriais.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTMateriais.BackgroundImage")));
+            this.BTMateriais.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTMateriais.Location = new System.Drawing.Point(233, 208);
+            this.BTMateriais.Name = "BTMateriais";
+            this.BTMateriais.Size = new System.Drawing.Size(115, 115);
+            this.BTMateriais.TabIndex = 6;
+            this.BTMateriais.UseVisualStyleBackColor = true;
+            this.BTMateriais.Click += new System.EventHandler(this.BTMateriais_Click);
             // 
             // BTLogout
             // 
@@ -144,12 +146,12 @@
             this.ClientSize = new System.Drawing.Size(734, 422);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BTLogout);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.BTMateriais);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.BTAnamnese);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BTPaciente);
             this.Controls.Add(this.BTMedico);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_MenuPrincipal";
@@ -164,12 +166,12 @@
         #endregion
 
         private System.Windows.Forms.Button BTMedico;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BTPaciente;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button BTAnamnese;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button BTMateriais;
         private System.Windows.Forms.Button BTLogout;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

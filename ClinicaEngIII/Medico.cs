@@ -8,22 +8,19 @@ namespace ClinicaEngIII
 {
     public class Medico
     {
-        private string nome;
-        private string crm;
-        private string endereco;
-        private string sexo;
-        private string telefone;
-        private string area;
-        private double salario;
-        private string hrAtendimento;
+        public Medico(string crm, string area, double salario,
+            string nome, string cpf, string end, int idade, string sexo, string tel) {
+            this.Crm = crm;
+            this.Area = area;
+            this.Salario = salario;
+            this.usuario = new Usuario(nome, cpf, end, idade, sexo, tel);
+        }
 
-        public string Crm { get => crm; set => crm = value; }
-        public string Endereco { get => endereco; set => endereco = value; }
-        public string Nome { get => nome; set => nome = value; }
-        public string Sexo { get => sexo; set => sexo = value; }
-        public string Telefone { get => telefone; set => telefone = value; }
-        public string Area { get => area; set => area = value; }
-        public double Salario { get => salario; set => salario = value; }
-        public string HrAtendimento { get => hrAtendimento; set => hrAtendimento = value; }
+        public string Crm { get => Crm; set => Crm = value; }
+        public string Area { get => Area; set => Area = value; }
+        public double Salario { get => Salario; set => Salario = value; }
+        public int IdMedico { get => IdMedico; set => IdMedico = value; }
+
+        Usuario usuario = new Usuario();
     }
 }

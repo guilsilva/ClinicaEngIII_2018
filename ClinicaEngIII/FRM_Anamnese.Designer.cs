@@ -66,6 +66,7 @@
             this.CBDoencaSim = new System.Windows.Forms.CheckBox();
             this.CBGravidaNao = new System.Windows.Forms.CheckBox();
             this.CBGravidaSim = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PBLimpar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBPesquisar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBVoltar)).BeginInit();
@@ -278,11 +279,12 @@
             this.PBVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBVoltar.TabIndex = 41;
             this.PBVoltar.TabStop = false;
+            this.PBVoltar.Click += new System.EventHandler(this.PBVoltar_Click);
             // 
             // PBCancelar
             // 
             this.PBCancelar.Image = ((System.Drawing.Image)(resources.GetObject("PBCancelar.Image")));
-            this.PBCancelar.Location = new System.Drawing.Point(280, 457);
+            this.PBCancelar.Location = new System.Drawing.Point(244, 457);
             this.PBCancelar.Name = "PBCancelar";
             this.PBCancelar.Size = new System.Drawing.Size(30, 30);
             this.PBCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -292,7 +294,7 @@
             // PBConfirmar
             // 
             this.PBConfirmar.Image = ((System.Drawing.Image)(resources.GetObject("PBConfirmar.Image")));
-            this.PBConfirmar.Location = new System.Drawing.Point(316, 457);
+            this.PBConfirmar.Location = new System.Drawing.Point(280, 457);
             this.PBConfirmar.Name = "PBConfirmar";
             this.PBConfirmar.Size = new System.Drawing.Size(30, 30);
             this.PBConfirmar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -308,6 +310,7 @@
             this.PBEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBEditar.TabIndex = 38;
             this.PBEditar.TabStop = false;
+            this.PBEditar.Click += new System.EventHandler(this.PBEditar_Click);
             // 
             // CBDrogasSim
             // 
@@ -441,12 +444,23 @@
             this.CBGravidaSim.UseVisualStyleBackColor = true;
             this.CBGravidaSim.CheckedChanged += new System.EventHandler(this.CBGravidaSim_CheckedChanged);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(104, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(259, 12);
+            this.label10.TabIndex = 54;
+            this.label10.Text = "Informe o Nome ou o CPF do Paciente para realizar a pesquisa";
+            // 
             // FRM_Anamnese
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(429, 515);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.CBGravidaNao);
             this.Controls.Add(this.CBGravidaSim);
             this.Controls.Add(this.CBDoencaNao);
@@ -538,5 +552,6 @@
         private System.Windows.Forms.CheckBox CBDoencaSim;
         private System.Windows.Forms.CheckBox CBGravidaNao;
         private System.Windows.Forms.CheckBox CBGravidaSim;
+        private System.Windows.Forms.Label label10;
     }
 }

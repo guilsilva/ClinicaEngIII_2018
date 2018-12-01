@@ -13,6 +13,7 @@ namespace ClinicaEngIII
     public partial class FRM_Anamnese : Form
     {
         ManipulacoesTelas mt = new ManipulacoesTelas();
+        FRM_MenuPrincipal frmMenu;
         public FRM_Anamnese()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace ClinicaEngIII
         private void FRM_Anamnese_Load(object sender, EventArgs e)
         {
             this.Height = 174;
+            PBEditar.Visible = false;
         }
 
         private void PBLimpar_Click(object sender, EventArgs e)
@@ -38,7 +40,7 @@ namespace ClinicaEngIII
         private void PBPesquisar_Click(object sender, EventArgs e)
         {
             //Se o usuário pesquisado Existir
-            if (false)
+            if (true)
             {
                 //Se existir dados
                 if (false)
@@ -49,6 +51,9 @@ namespace ClinicaEngIII
                     if (returno == DialogResult.Yes)
                     {
                         this.Height = 554;
+                        PBCancelar.Visible = false;
+                        PBConfirmar.Visible = false;
+                        PBEditar.Visible = true;
                         //usuario poderá vizualizar as informações e/ou editalas
                     }
                     else
@@ -59,6 +64,7 @@ namespace ClinicaEngIII
                 else
                 {
                     this.Height = 554;
+                    PBEditar.Visible = false;
                 }
             }
             //Se o usuário não existir
@@ -219,6 +225,20 @@ namespace ClinicaEngIII
             {
                 CBGravidaSim.Checked = false;
             }
+        }
+        
+        private void PBVoltar_Click(object sender, EventArgs e)
+        {
+            frmMenu = new FRM_MenuPrincipal();
+            frmMenu.Show();
+            this.Close();
+        }
+
+        private void PBEditar_Click(object sender, EventArgs e)
+        {
+            PBEditar.Visible = false;
+            PBCancelar.Visible = true;
+            PBConfirmar.Visible = true;
         }
     }
 }

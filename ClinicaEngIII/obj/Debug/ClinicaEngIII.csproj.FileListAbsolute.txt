@@ -15,3 +15,4 @@ C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Anamnese.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaAnamnese.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Paciente.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaPaciente.resources

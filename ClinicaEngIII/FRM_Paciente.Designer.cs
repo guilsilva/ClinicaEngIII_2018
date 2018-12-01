@@ -60,17 +60,18 @@
             // 
             this.PBVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBVoltar.BackgroundImage")));
             this.PBVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBVoltar.Location = new System.Drawing.Point(364, 253);
+            this.PBVoltar.Location = new System.Drawing.Point(138, 217);
             this.PBVoltar.Name = "PBVoltar";
             this.PBVoltar.Size = new System.Drawing.Size(30, 30);
             this.PBVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBVoltar.TabIndex = 50;
             this.PBVoltar.TabStop = false;
+            this.PBVoltar.Click += new System.EventHandler(this.PBVoltar_Click);
             // 
             // PBCancelar
             // 
             this.PBCancelar.Image = ((System.Drawing.Image)(resources.GetObject("PBCancelar.Image")));
-            this.PBCancelar.Location = new System.Drawing.Point(292, 253);
+            this.PBCancelar.Location = new System.Drawing.Point(225, 217);
             this.PBCancelar.Name = "PBCancelar";
             this.PBCancelar.Size = new System.Drawing.Size(30, 30);
             this.PBCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -80,42 +81,46 @@
             // PBConfirmar
             // 
             this.PBConfirmar.Image = ((System.Drawing.Image)(resources.GetObject("PBConfirmar.Image")));
-            this.PBConfirmar.Location = new System.Drawing.Point(328, 253);
+            this.PBConfirmar.Location = new System.Drawing.Point(261, 217);
             this.PBConfirmar.Name = "PBConfirmar";
             this.PBConfirmar.Size = new System.Drawing.Size(30, 30);
             this.PBConfirmar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBConfirmar.TabIndex = 48;
             this.PBConfirmar.TabStop = false;
+            this.PBConfirmar.Click += new System.EventHandler(this.PBConfirmar_Click);
             // 
             // PBLimpar
             // 
             this.PBLimpar.Image = ((System.Drawing.Image)(resources.GetObject("PBLimpar.Image")));
-            this.PBLimpar.Location = new System.Drawing.Point(328, 113);
+            this.PBLimpar.Location = new System.Drawing.Point(333, 217);
             this.PBLimpar.Name = "PBLimpar";
             this.PBLimpar.Size = new System.Drawing.Size(30, 30);
             this.PBLimpar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBLimpar.TabIndex = 47;
             this.PBLimpar.TabStop = false;
+            this.PBLimpar.Click += new System.EventHandler(this.PBLimpar_Click);
             // 
             // PBEditar
             // 
             this.PBEditar.Image = ((System.Drawing.Image)(resources.GetObject("PBEditar.Image")));
-            this.PBEditar.Location = new System.Drawing.Point(328, 253);
+            this.PBEditar.Location = new System.Drawing.Point(297, 217);
             this.PBEditar.Name = "PBEditar";
             this.PBEditar.Size = new System.Drawing.Size(30, 30);
             this.PBEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBEditar.TabIndex = 46;
             this.PBEditar.TabStop = false;
+            this.PBEditar.Click += new System.EventHandler(this.PBEditar_Click);
             // 
             // PBPesquisar
             // 
             this.PBPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("PBPesquisar.Image")));
-            this.PBPesquisar.Location = new System.Drawing.Point(364, 113);
+            this.PBPesquisar.Location = new System.Drawing.Point(369, 217);
             this.PBPesquisar.Name = "PBPesquisar";
             this.PBPesquisar.Size = new System.Drawing.Size(30, 30);
             this.PBPesquisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBPesquisar.TabIndex = 45;
             this.PBPesquisar.TabStop = false;
+            this.PBPesquisar.Click += new System.EventHandler(this.PBPesquisar_Click);
             // 
             // label10
             // 
@@ -131,7 +136,6 @@
             // TBCPF
             // 
             this.TBCPF.BackColor = System.Drawing.Color.White;
-            this.TBCPF.Enabled = false;
             this.TBCPF.Location = new System.Drawing.Point(138, 87);
             this.TBCPF.Name = "TBCPF";
             this.TBCPF.Size = new System.Drawing.Size(261, 20);
@@ -140,8 +144,7 @@
             // TBSexo
             // 
             this.TBSexo.BackColor = System.Drawing.Color.White;
-            this.TBSexo.Enabled = false;
-            this.TBSexo.Location = new System.Drawing.Point(138, 227);
+            this.TBSexo.Location = new System.Drawing.Point(138, 191);
             this.TBSexo.Name = "TBSexo";
             this.TBSexo.Size = new System.Drawing.Size(261, 20);
             this.TBSexo.TabIndex = 38;
@@ -149,8 +152,7 @@
             // TBEndereco
             // 
             this.TBEndereco.BackColor = System.Drawing.Color.White;
-            this.TBEndereco.Enabled = false;
-            this.TBEndereco.Location = new System.Drawing.Point(138, 201);
+            this.TBEndereco.Location = new System.Drawing.Point(138, 165);
             this.TBEndereco.Name = "TBEndereco";
             this.TBEndereco.Size = new System.Drawing.Size(261, 20);
             this.TBEndereco.TabIndex = 37;
@@ -158,8 +160,7 @@
             // TBTelefone
             // 
             this.TBTelefone.BackColor = System.Drawing.Color.White;
-            this.TBTelefone.Enabled = false;
-            this.TBTelefone.Location = new System.Drawing.Point(138, 175);
+            this.TBTelefone.Location = new System.Drawing.Point(138, 139);
             this.TBTelefone.Name = "TBTelefone";
             this.TBTelefone.Size = new System.Drawing.Size(261, 20);
             this.TBTelefone.TabIndex = 36;
@@ -167,8 +168,7 @@
             // TBIdade
             // 
             this.TBIdade.BackColor = System.Drawing.Color.White;
-            this.TBIdade.Enabled = false;
-            this.TBIdade.Location = new System.Drawing.Point(138, 149);
+            this.TBIdade.Location = new System.Drawing.Point(138, 113);
             this.TBIdade.Name = "TBIdade";
             this.TBIdade.Size = new System.Drawing.Size(261, 20);
             this.TBIdade.TabIndex = 35;
@@ -184,7 +184,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(51, 230);
+            this.label5.Location = new System.Drawing.Point(51, 194);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 17);
             this.label5.TabIndex = 33;
@@ -204,7 +204,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(51, 178);
+            this.label3.Location = new System.Drawing.Point(51, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 29;
@@ -214,7 +214,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(51, 204);
+            this.label4.Location = new System.Drawing.Point(51, 168);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 17);
             this.label4.TabIndex = 28;
@@ -224,7 +224,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 152);
+            this.label2.Location = new System.Drawing.Point(51, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 17);
             this.label2.TabIndex = 27;
@@ -245,7 +245,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(458, 342);
+            this.ClientSize = new System.Drawing.Size(458, 306);
             this.Controls.Add(this.PBVoltar);
             this.Controls.Add(this.PBCancelar);
             this.Controls.Add(this.PBConfirmar);

@@ -13,6 +13,7 @@ namespace ClinicaEngIII
     public partial class FRM_Medico : Form
     {
         ManipulacoesTelas mt = new ManipulacoesTelas();
+        Medico medico;
         public FRM_Medico()
         {
             InitializeComponent();
@@ -53,6 +54,9 @@ namespace ClinicaEngIII
         private void PBConfirmar_Click(object sender, EventArgs e)
         {
             normalizarTelaMedico();
+            medico = new Medico(TBCRM.Text.ToString(), TBArea.Text.ToString(), double.Parse(TBSalario.Text.ToString()), 
+                TBNome.Text.ToString(), TBCPF.Text.ToString(), TBEndereco.Text.ToString(), 
+                int.Parse(TBIdade.Text.ToString()), TBSexo.Text.ToString(), TBTelefone.Text.ToString());
         }
 
         private void normalizarTelaMedico()

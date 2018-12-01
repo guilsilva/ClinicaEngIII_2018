@@ -18,6 +18,9 @@ namespace ClinicaEngIII
             
         }
         FRM_login frmLogin = new FRM_login(true);
+        FRM_Paciente frmPac = new FRM_Paciente();
+        FRM_Medico frmMed = new FRM_Medico();
+        FRM_Anamnese frmAnam = new FRM_Anamnese();
         private void BTLogout_Click(object sender, EventArgs e)
         {
             frmLogin.Show();
@@ -36,15 +39,25 @@ namespace ClinicaEngIII
 
         private void BTMedico_Click(object sender, EventArgs e)
         {
-            FRM_Medico frmMed = new FRM_Medico();
             frmMed.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void BTAnamnese_Click(object sender, EventArgs e)
         {
-            FRM_Anamnese frmAnam = new FRM_Anamnese();
             frmAnam.Show();
+            this.Close();
+        }
+
+        private void BTPaciente_Click(object sender, EventArgs e)
+        {
+            frmPac.Show();
+            this.Close();
+        }
+
+        private void BTMateriais_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
