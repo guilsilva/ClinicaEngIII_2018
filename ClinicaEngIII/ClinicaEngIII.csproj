@@ -53,11 +53,29 @@
     <Compile Include="FRM_Anamnese.Designer.cs">
       <DependentUpon>FRM_Anamnese.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Consulta.Designer.cs">
+      <DependentUpon>FRM_Consulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_ConsultaAnamnese.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_ConsultaAnamnese.Designer.cs">
       <DependentUpon>FRM_ConsultaAnamnese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ConsultaConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ConsultaConsultas.Designer.cs">
+      <DependentUpon>FRM_ConsultaConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ConsultaMateriais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ConsultaMateriais.Designer.cs">
+      <DependentUpon>FRM_ConsultaMateriais.cs</DependentUpon>
     </Compile>
     <Compile Include="FRM_ConsultaPaciente.cs">
       <SubType>Form</SubType>
@@ -109,6 +127,7 @@
     </Compile>
     <Compile Include="Login.cs" />
     <Compile Include="ManipulacoesTelas.cs" />
+    <Compile Include="Materiais.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Program.cs" />
@@ -117,8 +136,17 @@
     <EmbeddedResource Include="FRM_Anamnese.resx">
       <DependentUpon>FRM_Anamnese.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Consulta.resx">
+      <DependentUpon>FRM_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_ConsultaAnamnese.resx">
       <DependentUpon>FRM_ConsultaAnamnese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ConsultaConsultas.resx">
+      <DependentUpon>FRM_ConsultaConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ConsultaMateriais.resx">
+      <DependentUpon>FRM_ConsultaMateriais.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_ConsultaPaciente.resx">
       <DependentUpon>FRM_ConsultaPaciente.cs</DependentUpon>

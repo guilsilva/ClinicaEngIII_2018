@@ -268,6 +268,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_Paciente";
             this.Text = "Paciente";
+            this.Load += new System.EventHandler(this.FRM_Paciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PBVoltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBCancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBConfirmar)).EndInit();

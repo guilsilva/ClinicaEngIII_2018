@@ -112,7 +112,7 @@
             this.BTMateriais.Name = "BTMateriais";
             this.BTMateriais.Size = new System.Drawing.Size(115, 115);
             this.BTMateriais.TabIndex = 6;
-            this.BTMateriais.UseVisualStyleBackColor = true;
+            this.BTMateriais.UseVisualStyleBackColor = false;
             this.BTMateriais.Click += new System.EventHandler(this.BTMateriais_Click);
             // 
             // BTLogout

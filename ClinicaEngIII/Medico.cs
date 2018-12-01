@@ -13,14 +13,13 @@ namespace ClinicaEngIII
             this.Crm = crm;
             this.Area = area;
             this.Salario = salario;
-            this.usuario = new Usuario(nome, cpf, end, idade, sexo, tel);
+            this.medico = new Usuario(nome, cpf, end, idade, sexo, tel);
         }
 
         public string Crm { get => Crm; set => Crm = value; }
         public string Area { get => Area; set => Area = value; }
         public double Salario { get => Salario; set => Salario = value; }
         public int IdMedico { get => IdMedico; set => IdMedico = value; }
-
-        Usuario usuario = new Usuario();
+        Usuario medico;
     }
 }

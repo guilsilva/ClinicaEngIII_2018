@@ -18,6 +18,13 @@ namespace ClinicaEngIII
             InitializeComponent();
         }
 
+        public FRM_ConsultaAnamnese(string nome, string cpf)
+        {
+            InitializeComponent();
+            string Nome = nome;
+            string CPF = cpf;
+        }
+
         private void DGV_ConsultaAnamnese_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             frmAnam = new FRM_Anamnese(DGV_ConsultaAnamnese.CurrentRow.Cells[0].Value.ToString(), DGV_ConsultaAnamnese.CurrentRow.Cells[1].Value.ToString());
@@ -34,7 +41,8 @@ namespace ClinicaEngIII
 
         private void FRM_ConsultaAnamnese_Load(object sender, EventArgs e)
         {
-            //DGV_ConsultaAnamnese.Rows.Insert(0, "ola", "Tudo bem");
+            /*Realizar um select na base buscando anamnese do 
+            paciente recebido por parametro no construtor(linhas 24 e 25)*/
         }
     }
 }

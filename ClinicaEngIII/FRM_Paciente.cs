@@ -16,7 +16,7 @@ namespace ClinicaEngIII
         {
             InitializeComponent();
         }
-
+        bool update = false;
         public FRM_Paciente(string nome, string CPF, int idade, string sexo, string tel, string end)
         {
             InitializeComponent();
@@ -92,7 +92,16 @@ namespace ClinicaEngIII
 
         private void PBEditar_Click(object sender, EventArgs e)
         {
+            PBEditar.Visible = false;
+            PBCancelar.Visible = true;
+            mt.AlterarEdicaoTextBoxes(Controls, true);
+            update = true;
+        }
 
+        private void FRM_Paciente_Load(object sender, EventArgs e)
+        {
+            PBEditar.Visible = false;
+            PBCancelar.Visible = false;
         }
     }
 }

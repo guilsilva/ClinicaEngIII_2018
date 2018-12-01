@@ -30,5 +30,19 @@ namespace ClinicaEngIII
                 }
             }
         }
+        public bool VerificaTextBoxesPreenchidas(Control.ControlCollection controles)
+        {
+            foreach (Control ctrl in controles)
+            {
+                if (ctrl is TextBox)
+                {
+                    if(((TextBox)(ctrl)).Text == String.Empty)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
     }
 }
