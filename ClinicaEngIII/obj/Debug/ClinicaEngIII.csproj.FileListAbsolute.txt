@@ -18,3 +18,8 @@ C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaPaciente.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Materiais.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaMateriais.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Consulta.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaConsultas.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaMedico.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Exame.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Secretaria.resources

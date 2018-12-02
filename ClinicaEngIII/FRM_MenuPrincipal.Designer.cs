@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MenuPrincipal));
             this.BTMedico = new System.Windows.Forms.Button();
             this.BTPaciente = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BTSecretaria = new System.Windows.Forms.Button();
             this.BTAnamnese = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.BTConsulta = new System.Windows.Forms.Button();
+            this.BTExame = new System.Windows.Forms.Button();
             this.BTMateriais = new System.Windows.Forms.Button();
             this.BTLogout = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -63,15 +63,16 @@
             this.BTPaciente.UseVisualStyleBackColor = true;
             this.BTPaciente.Click += new System.EventHandler(this.BTPaciente_Click);
             // 
-            // button3
+            // BTSecretaria
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(387, 60);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 115);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.BTSecretaria.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTSecretaria.BackgroundImage")));
+            this.BTSecretaria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTSecretaria.Location = new System.Drawing.Point(387, 60);
+            this.BTSecretaria.Name = "BTSecretaria";
+            this.BTSecretaria.Size = new System.Drawing.Size(115, 115);
+            this.BTSecretaria.TabIndex = 2;
+            this.BTSecretaria.UseVisualStyleBackColor = true;
+            this.BTSecretaria.Click += new System.EventHandler(this.BTSecretaria_Click);
             // 
             // BTAnamnese
             // 
@@ -84,25 +85,27 @@
             this.BTAnamnese.UseVisualStyleBackColor = true;
             this.BTAnamnese.Click += new System.EventHandler(this.BTAnamnese_Click);
             // 
-            // button5
+            // BTConsulta
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(547, 60);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(115, 115);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
+            this.BTConsulta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTConsulta.BackgroundImage")));
+            this.BTConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTConsulta.Location = new System.Drawing.Point(547, 60);
+            this.BTConsulta.Name = "BTConsulta";
+            this.BTConsulta.Size = new System.Drawing.Size(115, 115);
+            this.BTConsulta.TabIndex = 4;
+            this.BTConsulta.UseVisualStyleBackColor = true;
+            this.BTConsulta.Click += new System.EventHandler(this.BTConsulta_Click);
             // 
-            // button6
+            // BTExame
             // 
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.Location = new System.Drawing.Point(66, 208);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(115, 115);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
+            this.BTExame.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTExame.BackgroundImage")));
+            this.BTExame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTExame.Location = new System.Drawing.Point(66, 208);
+            this.BTExame.Name = "BTExame";
+            this.BTExame.Size = new System.Drawing.Size(115, 115);
+            this.BTExame.TabIndex = 5;
+            this.BTExame.UseVisualStyleBackColor = true;
+            this.BTExame.Click += new System.EventHandler(this.BTExame_Click);
             // 
             // BTMateriais
             // 
@@ -147,10 +150,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BTLogout);
             this.Controls.Add(this.BTMateriais);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.BTExame);
+            this.Controls.Add(this.BTConsulta);
             this.Controls.Add(this.BTAnamnese);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BTSecretaria);
             this.Controls.Add(this.BTPaciente);
             this.Controls.Add(this.BTMedico);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -167,10 +170,10 @@
 
         private System.Windows.Forms.Button BTMedico;
         private System.Windows.Forms.Button BTPaciente;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BTSecretaria;
         private System.Windows.Forms.Button BTAnamnese;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BTConsulta;
+        private System.Windows.Forms.Button BTExame;
         private System.Windows.Forms.Button BTMateriais;
         private System.Windows.Forms.Button BTLogout;
         private System.Windows.Forms.PictureBox pictureBox1;

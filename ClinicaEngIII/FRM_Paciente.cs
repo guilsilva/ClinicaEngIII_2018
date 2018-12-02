@@ -15,9 +15,11 @@ namespace ClinicaEngIII
         public FRM_Paciente()
         {
             InitializeComponent();
+            PBEditar.Visible = false;
+            PBCancelar.Visible = false;
         }
         bool update = false;
-        public FRM_Paciente(string nome, string CPF, int idade, string sexo, string tel, string end)
+        public FRM_Paciente(string CPF, string nome, int idade, string sexo, string tel, string end)
         {
             InitializeComponent();
             TBCPF.Text = CPF;
@@ -26,6 +28,9 @@ namespace ClinicaEngIII
             TBNome.Text = nome;
             TBSexo.Text = sexo;
             TBTelefone.Text = tel;
+            PBEditar.Visible = true;
+            PBConfirmar.Visible = false;
+            PBCancelar.Visible = false;
         }
         FRM_MenuPrincipal frmMenu;
         FRM_Anamnese frmAnam;
@@ -45,18 +50,49 @@ namespace ClinicaEngIII
 
         private void PBConfirmar_Click(object sender, EventArgs e)
         {
-            //Insere no Banco
-            var resultado = MessageBox.Show("Cadastro Realizado com Sucesso! Deseja cadastrar uma Anamnese?", "Cadastro",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if(resultado == DialogResult.Yes)
+            var resultado = DialogResult;
+            //Salva os dados no banco
+            if (update)
             {
-                frmAnam = new FRM_Anamnese(TBNome.Text.ToString(), TBCPF.Text.ToString());
-                frmAnam.Show();
-                this.Close();
+                //Update no registro que ja esta selecionado
+                if (mt.VerificaTextBoxesPreenchidas(Controls))
+                {
+                    mt.limparTextBoxes(Controls);
+                    MessageBox.Show("Dados alterados com sucesso", "Sucesso", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                    mt.AlterarEdicaoTextBoxes(Controls, false);
+                    TBNome.Enabled = true;
+                    TBCPF.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Dados obrigatórios não foram preenchidos!", "Erro", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
             }
             else
             {
+                //Create no registro inserido
+                if (mt.VerificaTextBoxesPreenchidas(Controls))
+                {
+                    resultado = MessageBox.Show("Cadastro Realizado com Sucesso! Deseja cadastrar uma Anamnese?", "Cadastro",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    mt.AlterarEdicaoTextBoxes(Controls, false);
+                    TBNome.Enabled = true;
+                    TBCPF.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Dados obrigatórios não foram preenchidos!", "Erro", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
+            }
+            if(resultado == DialogResult.Yes)
+            {
+                frmAnam = new FRM_Anamnese(TBNome.Text.ToString(), TBCPF.Text.ToString());
                 mt.limparTextBoxes(Controls);
+                frmAnam.Show();
+                this.Close();
             }
         }
 
@@ -68,8 +104,9 @@ namespace ClinicaEngIII
                 //Se existir mais de um registro
                 if (true)
                 {
-                    frmConsPac = new FRM_ConsultaPaciente();
+                    frmConsPac = new FRM_ConsultaPaciente(TBNome.Text.ToString(), TBCPF.Text.ToString());
                     frmConsPac.Show();
+                    this.Close();
                 }
             }
             //Se o usuário não existir
@@ -94,14 +131,14 @@ namespace ClinicaEngIII
         {
             PBEditar.Visible = false;
             PBCancelar.Visible = true;
+            PBConfirmar.Visible = true;
             mt.AlterarEdicaoTextBoxes(Controls, true);
             update = true;
         }
 
         private void FRM_Paciente_Load(object sender, EventArgs e)
         {
-            PBEditar.Visible = false;
-            PBCancelar.Visible = false;
+
         }
     }
 }

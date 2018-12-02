@@ -128,9 +128,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(136, 46);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(259, 12);
+            this.label10.Size = new System.Drawing.Size(247, 12);
             this.label10.TabIndex = 44;
-            this.label10.Text = "Informe o Nome ou o CPF do Paciente para realizar a pesquisa";
+            this.label10.Text = "Informe o Nome e CPF do Paciente para realizar a pesquisa";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // TBCPF
@@ -267,6 +267,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_Paciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paciente";
             this.Load += new System.EventHandler(this.FRM_Paciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PBVoltar)).EndInit();

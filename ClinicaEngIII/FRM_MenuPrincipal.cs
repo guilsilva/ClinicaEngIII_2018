@@ -21,6 +21,9 @@ namespace ClinicaEngIII
         FRM_Medico frmMed;
         FRM_Anamnese frmAnam;
         FRM_Materiais frmMeteriais;
+        FRM_Consulta frmConsulta;
+        FRM_Exame frmExame;
+        FRM_Secretaria frmSec;
         private void BTLogout_Click(object sender, EventArgs e)
         {
             frmLogin = new FRM_login(true);
@@ -63,6 +66,27 @@ namespace ClinicaEngIII
         {
             frmMeteriais = new FRM_Materiais();
             frmMeteriais.Show();
+            this.Close();
+        }
+
+        private void BTConsulta_Click(object sender, EventArgs e)
+        {
+            frmConsulta = new FRM_Consulta();
+            frmConsulta.Show();
+            this.Close();
+        }
+
+        private void BTSecretaria_Click(object sender, EventArgs e)
+        {
+            frmSec = new FRM_Secretaria();
+            frmSec.Show();
+            this.Close();
+        }
+
+        private void BTExame_Click(object sender, EventArgs e)
+        {
+            frmExame = new FRM_Exame();
+            frmExame.Show();
             this.Close();
         }
     }

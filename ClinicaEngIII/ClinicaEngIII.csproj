@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Anamnese.cs" />
+    <Compile Include="Consulta.cs" />
+    <Compile Include="Exame.cs" />
     <Compile Include="FRM_Anamnese.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,17 +73,41 @@
     <Compile Include="FRM_ConsultaConsultas.Designer.cs">
       <DependentUpon>FRM_ConsultaConsultas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_ConsultaExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ConsultaExame.Designer.cs">
+      <DependentUpon>FRM_ConsultaExame.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_ConsultaMateriais.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_ConsultaMateriais.Designer.cs">
       <DependentUpon>FRM_ConsultaMateriais.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_ConsultaMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ConsultaMedico.Designer.cs">
+      <DependentUpon>FRM_ConsultaMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_ConsultaPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_ConsultaPaciente.Designer.cs">
       <DependentUpon>FRM_ConsultaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ConsultaSecretaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ConsultaSecretaria.Designer.cs">
+      <DependentUpon>FRM_ConsultaSecretaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Exame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Exame.Designer.cs">
+      <DependentUpon>FRM_Exame.cs</DependentUpon>
     </Compile>
     <Compile Include="FRM_login.cs">
       <SubType>Form</SubType>
@@ -113,6 +139,12 @@
     <Compile Include="FRM_Paciente.Designer.cs">
       <DependentUpon>FRM_Paciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_Secretaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Secretaria.Designer.cs">
+      <DependentUpon>FRM_Secretaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_TrocaSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +164,7 @@
     <Compile Include="Paciente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secretaria.cs" />
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="FRM_Anamnese.resx">
       <DependentUpon>FRM_Anamnese.cs</DependentUpon>
@@ -145,11 +178,23 @@
     <EmbeddedResource Include="FRM_ConsultaConsultas.resx">
       <DependentUpon>FRM_ConsultaConsultas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ConsultaExame.resx">
+      <DependentUpon>FRM_ConsultaExame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_ConsultaMateriais.resx">
       <DependentUpon>FRM_ConsultaMateriais.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ConsultaMedico.resx">
+      <DependentUpon>FRM_ConsultaMedico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_ConsultaPaciente.resx">
       <DependentUpon>FRM_ConsultaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ConsultaSecretaria.resx">
+      <DependentUpon>FRM_ConsultaSecretaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Exame.resx">
+      <DependentUpon>FRM_Exame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_login.resx">
       <DependentUpon>FRM_login.cs</DependentUpon>
@@ -165,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_Paciente.resx">
       <DependentUpon>FRM_Paciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Secretaria.resx">
+      <DependentUpon>FRM_Secretaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_TrocaSenha.resx">
       <DependentUpon>FRM_TrocaSenha.cs</DependentUpon>

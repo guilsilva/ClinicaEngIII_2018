@@ -1,6 +1,6 @@
 ﻿namespace ClinicaEngIII
 {
-    partial class FRM_ConsultaPaciente
+    partial class FRM_ConsultaMedico
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ConsultaPaciente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ConsultaMedico));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PBVoltar = new System.Windows.Forms.PictureBox();
-            this.DGV_ConsultaPaciente = new System.Windows.Forms.DataGridView();
+            this.DGV_ConsultaMedico = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.PBVoltar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_ConsultaPaciente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_ConsultaMedico)).BeginInit();
             this.SuspendLayout();
             // 
             // PBVoltar
             // 
             this.PBVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBVoltar.BackgroundImage")));
             this.PBVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBVoltar.Location = new System.Drawing.Point(653, 231);
+            this.PBVoltar.Location = new System.Drawing.Point(954, 236);
             this.PBVoltar.Name = "PBVoltar";
             this.PBVoltar.Size = new System.Drawing.Size(30, 30);
             this.PBVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -54,20 +57,23 @@
             this.PBVoltar.TabStop = false;
             this.PBVoltar.Click += new System.EventHandler(this.PBVoltar_Click);
             // 
-            // DGV_ConsultaPaciente
+            // DGV_ConsultaMedico
             // 
-            this.DGV_ConsultaPaciente.AllowUserToDeleteRows = false;
-            this.DGV_ConsultaPaciente.BackgroundColor = System.Drawing.Color.White;
-            this.DGV_ConsultaPaciente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.DGV_ConsultaPaciente.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.DGV_ConsultaPaciente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_ConsultaPaciente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGV_ConsultaMedico.AllowUserToDeleteRows = false;
+            this.DGV_ConsultaMedico.BackgroundColor = System.Drawing.Color.White;
+            this.DGV_ConsultaMedico.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DGV_ConsultaMedico.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DGV_ConsultaMedico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_ConsultaMedico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6});
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -75,20 +81,21 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV_ConsultaPaciente.DefaultCellStyle = dataGridViewCellStyle1;
-            this.DGV_ConsultaPaciente.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.DGV_ConsultaPaciente.GridColor = System.Drawing.Color.DeepSkyBlue;
-            this.DGV_ConsultaPaciente.Location = new System.Drawing.Point(39, 36);
-            this.DGV_ConsultaPaciente.Name = "DGV_ConsultaPaciente";
-            this.DGV_ConsultaPaciente.ReadOnly = true;
-            this.DGV_ConsultaPaciente.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.DGV_ConsultaPaciente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_ConsultaPaciente.Size = new System.Drawing.Size(644, 189);
-            this.DGV_ConsultaPaciente.TabIndex = 43;
-            this.DGV_ConsultaPaciente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_ConsultaPaciente_CellContentClick);
+            this.DGV_ConsultaMedico.DefaultCellStyle = dataGridViewCellStyle1;
+            this.DGV_ConsultaMedico.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.DGV_ConsultaMedico.GridColor = System.Drawing.Color.DeepSkyBlue;
+            this.DGV_ConsultaMedico.Location = new System.Drawing.Point(41, 41);
+            this.DGV_ConsultaMedico.Name = "DGV_ConsultaMedico";
+            this.DGV_ConsultaMedico.ReadOnly = true;
+            this.DGV_ConsultaMedico.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DGV_ConsultaMedico.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV_ConsultaMedico.Size = new System.Drawing.Size(943, 189);
+            this.DGV_ConsultaMedico.TabIndex = 43;
+            this.DGV_ConsultaMedico.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_ConsultaMedico_CellContentClick);
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "(nenhum)";
             this.Column1.HeaderText = "Column1";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
@@ -123,22 +130,40 @@
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
-            // FRM_ConsultaPaciente
+            // Column7
+            // 
+            this.Column7.HeaderText = "Column7";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Column8";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Column9";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // FRM_ConsultaMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(723, 294);
+            this.ClientSize = new System.Drawing.Size(1008, 296);
             this.ControlBox = false;
             this.Controls.Add(this.PBVoltar);
-            this.Controls.Add(this.DGV_ConsultaPaciente);
+            this.Controls.Add(this.DGV_ConsultaMedico);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FRM_ConsultaPaciente";
+            this.Name = "FRM_ConsultaMedico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_ConsultaPaciente";
-            this.Load += new System.EventHandler(this.FRM_ConsultaPaciente_Load);
+            this.Text = "Consulta Medico";
+            this.Load += new System.EventHandler(this.FRM_ConsultaMedico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PBVoltar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGV_ConsultaPaciente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_ConsultaMedico)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -146,12 +171,15 @@
         #endregion
 
         private System.Windows.Forms.PictureBox PBVoltar;
-        private System.Windows.Forms.DataGridView DGV_ConsultaPaciente;
+        private System.Windows.Forms.DataGridView DGV_ConsultaMedico;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
     }
 }

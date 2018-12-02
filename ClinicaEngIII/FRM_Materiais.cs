@@ -82,8 +82,9 @@ namespace ClinicaEngIII
                 //Update no registro que ja esta selecionado
                 if (mt.VerificaTextBoxesPreenchidas(Controls))
                 {
-                    MessageBox.Show("Dados alterados com sucesso", "Sucesso", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                    mt.limparTextBoxes(Controls);
+                    MessageBox.Show("Cadastro Realizado com Sucesso!", "Cadastro", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
                 }
                 else
                 {
@@ -96,8 +97,9 @@ namespace ClinicaEngIII
                 //Create no registro inserido
                 if (mt.VerificaTextBoxesPreenchidas(Controls))
                 {
-                    MessageBox.Show("Dados alterados com sucesso", "Sucesso", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                    mt.limparTextBoxes(Controls);
+                    MessageBox.Show("Cadastro Realizado com Sucesso!", "Cadastro", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
                 }
                 else
                 {

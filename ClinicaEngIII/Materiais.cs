@@ -14,5 +14,14 @@ namespace ClinicaEngIII
         public string Descricao { get => Descricao; set => Descricao = value; }
         public string Tipo_Material { get => Tipo_Material; set => Tipo_Material = value; }
         public int IdMaterial { get => IdMaterial; set => IdMaterial = value; }
+
+        public Materiais(string nome, string validade, int quantidade, string descricao, string tipo)
+        {
+            this.Nome = nome;
+            this.Validade = validade;
+            this.Quantidade = quantidade;
+            this.Descricao = descricao;
+            this.Tipo_Material = tipo;
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace ClinicaEngIII
 {
     public partial class FRM_ConsultaPaciente : Form
     {
+        string Nome, CPF;
         public FRM_ConsultaPaciente()
         {
             InitializeComponent();
@@ -19,8 +20,8 @@ namespace ClinicaEngIII
         public FRM_ConsultaPaciente(string nome, string cpf)
         {
             InitializeComponent();
-            string Nome = nome;
-            string CPF = cpf;
+            this.Nome = nome;
+            this.CPF = cpf;
         }
         FRM_Paciente frmPac;
         private void PBVoltar_Click(object sender, EventArgs e)
@@ -32,6 +33,15 @@ namespace ClinicaEngIII
 
         private void FRM_ConsultaPaciente_Load(object sender, EventArgs e)
         {
+            //só para testes
+            DGV_ConsultaPaciente.Rows[0].Cells[0].Value = CPF;
+            DGV_ConsultaPaciente.Rows[0].Cells[1].Value = Nome;
+            for(int i = 2; i < 6; i++)
+            {
+                DGV_ConsultaPaciente.Rows[0].Cells[i].Value = "0";
+            }
+            //final dos testes
+
             //Realizar a consulta por CPF e Nome do Paciente! linhas 22 e 23
         }
 

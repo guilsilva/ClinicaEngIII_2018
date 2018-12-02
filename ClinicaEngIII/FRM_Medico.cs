@@ -14,21 +14,49 @@ namespace ClinicaEngIII
     {
         ManipulacoesTelas mt = new ManipulacoesTelas();
         Medico medico;
+        FRM_ConsultaMedico frmConsMed;
+        bool update = false;
         public FRM_Medico()
         {
             InitializeComponent();
+            PBEditar.Visible = false;
+        }
+
+        public FRM_Medico(string nome, string crm, string area, double salario, string end, string sexo,
+            int idade, string tel, string cpf)
+        {
+            InitializeComponent();
+            TBCRM.Text = crm;
+            TBArea.Text = area;
+            TBSalario.Text = salario.ToString();
+            TBNome.Text = nome;
+            TBCPF.Text = cpf;
+            TBEndereco.Text = end;
+            TBIdade.Text = idade.ToString();
+            TBSexo.Text = sexo;
+            TBTelefone.Text = tel;
+            PBEditar.Visible = true;
+            PBConfirmar.Visible = false;
         }
 
         private void FRM_Medico_Load(object sender, EventArgs e)
         {
-            PBEditar.Visible = false;
-            PBConfirmar.Visible = false;
             PBCancelar.Visible = false;
         }
 
         private void PBPesquisar_Click(object sender, EventArgs e)
         {
-            PBEditar.Visible = true;
+            if(TBCRM.Text == String.Empty || TBNome.Text == String.Empty)
+            {
+                MessageBox.Show("Campos obrigatórios para pesquisa não informados!", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                frmConsMed = new FRM_ConsultaMedico(TBNome.Text.ToString(), TBCRM.Text.ToString());
+                frmConsMed.Show();
+                this.Close();
+            }
         }
 
         private void PBEditar_Click(object sender, EventArgs e)
@@ -43,32 +71,54 @@ namespace ClinicaEngIII
         {
             mt.limparTextBoxes(this.Controls);
         }
-
-        
-
         private void PBCancelar_Click(object sender, EventArgs e)
         {
-            normalizarTelaMedico();
+            mt.AlterarEdicaoTextBoxes(this.Controls, false);
+            PBConfirmar.Visible = false;
+            PBCancelar.Visible = false;
+            PBEditar.Visible = true;
+            TBCRM.Enabled = true;
+            TBNome.Enabled = true;
         }
 
         private void PBConfirmar_Click(object sender, EventArgs e)
         {
-            normalizarTelaMedico();
-            medico = new Medico(TBCRM.Text.ToString(), TBArea.Text.ToString(), double.Parse(TBSalario.Text.ToString()), 
-                TBNome.Text.ToString(), TBCPF.Text.ToString(), TBEndereco.Text.ToString(), 
-                int.Parse(TBIdade.Text.ToString()), TBSexo.Text.ToString(), TBTelefone.Text.ToString());
+            //Salva os dados no banco
+            if (update)
+            {
+                //Update no registro que ja esta selecionado
+                if (mt.VerificaTextBoxesPreenchidas(Controls))
+                {
+                    mt.limparTextBoxes(Controls);
+                    MessageBox.Show("Cadastro Realizado com Sucesso!", "Cadastro", MessageBoxButtons.OK, 
+                        MessageBoxIcon.Information);
+                    mt.AlterarEdicaoTextBoxes(Controls, false);
+                    TBNome.Enabled = true;
+                    TBCRM.Enabled = true;
+                    PBCancelar.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Dados obrigatórios não foram preenchidos!", "Erro", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                //Create no registro inserido
+                if (mt.VerificaTextBoxesPreenchidas(Controls))
+                {
+                    mt.limparTextBoxes(Controls);
+                    MessageBox.Show("Cadastro Realizado com Sucesso!", "Cadastro", MessageBoxButtons.OK, 
+                        MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Dados obrigatórios não foram preenchidos!", "Erro", MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                }
+            }
         }
-
-        private void normalizarTelaMedico()
-        {
-            PBConfirmar.Visible = false;
-            PBCancelar.Visible = false;
-            PBEditar.Visible = true;
-            mt.AlterarEdicaoTextBoxes(this.Controls, false);
-            TBNome.Enabled = true;
-            TBCRM.Enabled = true;
-        }
-
         private void PBVoltar_Click(object sender, EventArgs e)
         {
             FRM_MenuPrincipal frmMenu = new FRM_MenuPrincipal();

@@ -15,7 +15,7 @@ namespace ClinicaEngIII
     {
         ManipulacoesTelas mt = new ManipulacoesTelas();
         bool update = false;
-        FRM_Consulta frmCons;
+        FRM_ConsultaConsultas frmConsCons;
         public FRM_Consulta()
         {
             InitializeComponent();
@@ -94,7 +94,8 @@ namespace ClinicaEngIII
             //Se tiver mais de um registro
             if (false)
             {
-                frmConsCons = new FRM_ConsultaConsultas(TBNome.Text.ToString());
+                frmConsCons = 
+                    new FRM_ConsultaConsultas(TBNomePaciente.Text.ToString(), TBNomeMedico.Text.ToString());
                 frmConsCons.Show();
                 this.Close();
             }

@@ -14,22 +14,25 @@ namespace ClinicaEngIII
     {
         ManipulacoesTelas mt = new ManipulacoesTelas();
         FRM_MenuPrincipal frmMenu;
+        string Nome, CPF;
         public FRM_Anamnese()
         {
             InitializeComponent();
         }
 
-        public FRM_Anamnese(string nome, string CPF)
+        public FRM_Anamnese(string nome, string cpf)
         {
             InitializeComponent();
-            TBNomePaciente.Text = nome;
-            TBCPFPaciente.Text = CPF;
+            this.Nome = nome;
+            this.CPF = cpf;
         }
 
         private void FRM_Anamnese_Load(object sender, EventArgs e)
         {
             this.Height = 174;
             PBEditar.Visible = false;
+            TBCPFPaciente.Text = CPF;
+            TBNomePaciente.Text = Nome;
         }
 
         private void PBLimpar_Click(object sender, EventArgs e)

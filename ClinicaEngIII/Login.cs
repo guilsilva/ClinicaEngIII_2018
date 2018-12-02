@@ -8,10 +8,12 @@ namespace ClinicaEngIII
 {
     public class Login
     {
-        private string nome;
-        private string senha;
-
-        public string Nome { get => nome; set => nome = value; }
-        public string Senha { get => senha; set => senha = value; }
+        public string Nome { get => Nome; set => Nome = value; }
+        public string Senha { get => Senha; set => Senha = value; }
+        public Login(string nome, string senha)
+        {
+            this.Nome = nome;
+            this.Senha = senha;
+        }
     }
 }

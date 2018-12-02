@@ -152,7 +152,6 @@
             // TBIdade
             // 
             this.TBIdade.BackColor = System.Drawing.Color.White;
-            this.TBIdade.Enabled = false;
             this.TBIdade.Location = new System.Drawing.Point(129, 95);
             this.TBIdade.Name = "TBIdade";
             this.TBIdade.Size = new System.Drawing.Size(261, 20);
@@ -161,7 +160,6 @@
             // TBEndereco
             // 
             this.TBEndereco.BackColor = System.Drawing.Color.White;
-            this.TBEndereco.Enabled = false;
             this.TBEndereco.Location = new System.Drawing.Point(129, 147);
             this.TBEndereco.Name = "TBEndereco";
             this.TBEndereco.Size = new System.Drawing.Size(261, 20);
@@ -170,7 +168,6 @@
             // TBTelefone
             // 
             this.TBTelefone.BackColor = System.Drawing.Color.White;
-            this.TBTelefone.Enabled = false;
             this.TBTelefone.Location = new System.Drawing.Point(129, 121);
             this.TBTelefone.Name = "TBTelefone";
             this.TBTelefone.Size = new System.Drawing.Size(261, 20);
@@ -179,7 +176,6 @@
             // TBSalario
             // 
             this.TBSalario.BackColor = System.Drawing.Color.White;
-            this.TBSalario.Enabled = false;
             this.TBSalario.Location = new System.Drawing.Point(129, 251);
             this.TBSalario.Name = "TBSalario";
             this.TBSalario.Size = new System.Drawing.Size(261, 20);
@@ -188,7 +184,6 @@
             // TBCPF
             // 
             this.TBCPF.BackColor = System.Drawing.Color.White;
-            this.TBCPF.Enabled = false;
             this.TBCPF.Location = new System.Drawing.Point(129, 225);
             this.TBCPF.Name = "TBCPF";
             this.TBCPF.Size = new System.Drawing.Size(261, 20);
@@ -197,7 +192,6 @@
             // TBArea
             // 
             this.TBArea.BackColor = System.Drawing.Color.White;
-            this.TBArea.Enabled = false;
             this.TBArea.Location = new System.Drawing.Point(129, 199);
             this.TBArea.Name = "TBArea";
             this.TBArea.Size = new System.Drawing.Size(261, 20);
@@ -206,7 +200,6 @@
             // TBSexo
             // 
             this.TBSexo.BackColor = System.Drawing.Color.White;
-            this.TBSexo.Enabled = false;
             this.TBSexo.Location = new System.Drawing.Point(129, 173);
             this.TBSexo.Name = "TBSexo";
             this.TBSexo.Size = new System.Drawing.Size(261, 20);
@@ -235,9 +228,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(127, 28);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(258, 12);
+            this.label10.Size = new System.Drawing.Size(246, 12);
             this.label10.TabIndex = 19;
-            this.label10.Text = "Informe o Nome ou o CRM do Médico para realizar a pesquisa";
+            this.label10.Text = "Informe o Nome e CRM do Médico para realizar a pesquisa";
             // 
             // PBPesquisar
             // 
@@ -253,7 +246,7 @@
             // PBEditar
             // 
             this.PBEditar.Image = ((System.Drawing.Image)(resources.GetObject("PBEditar.Image")));
-            this.PBEditar.Location = new System.Drawing.Point(288, 279);
+            this.PBEditar.Location = new System.Drawing.Point(288, 277);
             this.PBEditar.Name = "PBEditar";
             this.PBEditar.Size = new System.Drawing.Size(30, 30);
             this.PBEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
