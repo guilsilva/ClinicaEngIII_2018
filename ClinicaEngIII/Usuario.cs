@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaEngIII
 {
-    public class Usuario
+    class Usuario
     {
         public Usuario(){}
         public Usuario(string nome, string cpf, string end, int idade, string sexo, string tel)

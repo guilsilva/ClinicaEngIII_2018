@@ -17,6 +17,10 @@ namespace ClinicaEngIII
                 {
                     ((TextBox)(ctrl)).Text = String.Empty;
                 }
+                if (ctrl is CheckBox)
+                {
+                    ((CheckBox)(ctrl)).Checked = false;
+                }
             }
         }
 
@@ -43,6 +47,17 @@ namespace ClinicaEngIII
                 }
             }
             return true;
+        }
+
+        public void bloquearCheckBoxes(Control.ControlCollection controles, bool desbloquear)
+        {
+            foreach (Control ctrl in controles)
+            {
+                if (ctrl is CheckBox)
+                {
+                    ((CheckBox)(ctrl)).Enabled = desbloquear;
+                }
+            }
         }
     }
 }

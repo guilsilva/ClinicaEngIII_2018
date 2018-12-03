@@ -108,6 +108,10 @@ namespace ClinicaEngIII
                 //Create no registro inserido
                 if (mt.VerificaTextBoxesPreenchidas(Controls))
                 {
+                    medico = new Medico(TBCRM.Text.ToString(), TBArea.Text.ToString(), 
+                        double.Parse(TBSalario.Text.ToString()), TBNome.Text.ToString(), TBCPF.Text.ToString(),
+                        TBEndereco.Text.ToString(), int.Parse(TBIdade.Text.ToString()),TBSexo.Text.ToString(),
+                        TBTelefone.Text.ToString());
                     mt.limparTextBoxes(Controls);
                     MessageBox.Show("Cadastro Realizado com Sucesso!", "Cadastro", MessageBoxButtons.OK, 
                         MessageBoxIcon.Information);

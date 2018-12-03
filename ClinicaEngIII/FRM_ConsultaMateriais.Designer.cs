@@ -32,6 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PBVoltar = new System.Windows.Forms.PictureBox();
             this.DGV_ConsultaMateriais = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.PBVoltar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ConsultaMateriais)).BeginInit();
             this.SuspendLayout();
@@ -40,7 +45,7 @@
             // 
             this.PBVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PBVoltar.BackgroundImage")));
             this.PBVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PBVoltar.Location = new System.Drawing.Point(257, 233);
+            this.PBVoltar.Location = new System.Drawing.Point(557, 233);
             this.PBVoltar.Name = "PBVoltar";
             this.PBVoltar.Size = new System.Drawing.Size(30, 30);
             this.PBVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -50,11 +55,17 @@
             // 
             // DGV_ConsultaMateriais
             // 
-            this.DGV_ConsultaMateriais.AllowUserToOrderColumns = true;
+            this.DGV_ConsultaMateriais.AllowUserToDeleteRows = false;
             this.DGV_ConsultaMateriais.BackgroundColor = System.Drawing.Color.White;
             this.DGV_ConsultaMateriais.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DGV_ConsultaMateriais.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.DGV_ConsultaMateriais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_ConsultaMateriais.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -67,18 +78,49 @@
             this.DGV_ConsultaMateriais.GridColor = System.Drawing.Color.DeepSkyBlue;
             this.DGV_ConsultaMateriais.Location = new System.Drawing.Point(43, 38);
             this.DGV_ConsultaMateriais.Name = "DGV_ConsultaMateriais";
+            this.DGV_ConsultaMateriais.ReadOnly = true;
             this.DGV_ConsultaMateriais.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.DGV_ConsultaMateriais.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_ConsultaMateriais.Size = new System.Drawing.Size(244, 189);
+            this.DGV_ConsultaMateriais.Size = new System.Drawing.Size(544, 189);
             this.DGV_ConsultaMateriais.TabIndex = 43;
             this.DGV_ConsultaMateriais.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_ConsultaMateriais_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Column5";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // FRM_ConsultaMateriais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(327, 295);
+            this.ClientSize = new System.Drawing.Size(630, 289);
             this.ControlBox = false;
             this.Controls.Add(this.PBVoltar);
             this.Controls.Add(this.DGV_ConsultaMateriais);
@@ -96,5 +138,10 @@
 
         private System.Windows.Forms.PictureBox PBVoltar;
         private System.Windows.Forms.DataGridView DGV_ConsultaMateriais;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

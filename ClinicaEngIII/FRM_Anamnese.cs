@@ -15,6 +15,9 @@ namespace ClinicaEngIII
         ManipulacoesTelas mt = new ManipulacoesTelas();
         FRM_MenuPrincipal frmMenu;
         string Nome, CPF;
+        int idPac;
+        bool update = false;
+        Anamnese anamnese;
         public FRM_Anamnese()
         {
             InitializeComponent();
@@ -46,7 +49,7 @@ namespace ClinicaEngIII
             if (true)
             {
                 //Se existir dados
-                if (false)
+                if (true)
                 {
                     var returno = MessageBox.Show
                         ("Anamnese já preenchida para este Paciente! \n Deseja consultar os dados?",
@@ -57,6 +60,8 @@ namespace ClinicaEngIII
                         PBCancelar.Visible = false;
                         PBConfirmar.Visible = false;
                         PBEditar.Visible = true;
+                        mt.bloquearCheckBoxes(Controls, false);
+                        TBTipoSanguineo.Enabled = false;
                         //usuario poderá vizualizar as informações e/ou editalas
                     }
                     else
@@ -71,7 +76,7 @@ namespace ClinicaEngIII
                 }
             }
             //Se o usuário não existir
-            else if(true)
+            else
             {
                 var retorno = 
                     MessageBox.Show("Paciente não cadastrado no Sistema! \n Deseja Cadastrar este Paciente?", 
@@ -82,14 +87,7 @@ namespace ClinicaEngIII
                     frmPac.Show();
                     this.Close();
                 }
-            }
-            //Se a consulta retornar mais de um dado
-            else
-            {
-                FRM_ConsultaAnamnese frmCA = new FRM_ConsultaAnamnese();
-                frmCA.Show();
-                this.Close();
-            }
+            }            
         }
 
         private void CBDrogasSim_CheckedChanged(object sender, EventArgs e)
@@ -237,11 +235,53 @@ namespace ClinicaEngIII
             this.Close();
         }
 
+        private void PBConfirmar_Click(object sender, EventArgs e)
+        {
+            if((CBDrogasSim.Checked && TBDescDrogas.Text == String.Empty) ||
+                (CBAlergiasSim.Checked && TBDescAlergia.Text == String.Empty) ||
+                (CBMedicamentoSim.Checked && TBDescMedicamento.Text == String.Empty) ||
+                (CBGravidaSim.Checked && TBQntdSemanas.Text == String.Empty) || 
+                (CBCirurgiaSim.Checked && TBDescCirurgia.Text == String.Empty) ||
+                (CBDoencaSim.Checked && TBDescDoenca.Text == String.Empty) || 
+                TBNomePaciente.Text == String.Empty || TBCPFPaciente.Text == String.Empty ||
+                TBTipoSanguineo.Text == String.Empty) 
+            {
+                var resultado = MessageBox.Show("Dados obrigatórios não foram preenchidos!", "Erro",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                if (update)
+                {
+                    anamnese = new Anamnese(TBDescDoenca.Text.ToString(), TBDescDrogas.Text.ToString(),
+                    TBDescCirurgia.Text.ToString(), TBDescMedicamento.Text.ToString(),
+                    TBDescAlergia.Text.ToString(), TBTipoSanguineo.Text.ToString(), idPac);
+                    MessageBox.Show("Dados cadastrados com sucesso!", "Cadastro", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                    mt.limparTextBoxes(Controls);
+                    this.Height = 174;
+                }
+                else
+                {
+                    anamnese = new Anamnese(TBDescDoenca.Text.ToString(), TBDescDrogas.Text.ToString(),
+                    TBDescCirurgia.Text.ToString(), TBDescMedicamento.Text.ToString(),
+                    TBDescAlergia.Text.ToString(), TBTipoSanguineo.Text.ToString(), idPac);
+                    MessageBox.Show("Dados cadastrados com sucesso!", "Cadastro", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                }
+                PBEditar.Visible = false;
+                PBCancelar.Visible = false;
+            }
+        }
+
         private void PBEditar_Click(object sender, EventArgs e)
         {
             PBEditar.Visible = false;
             PBCancelar.Visible = true;
             PBConfirmar.Visible = true;
+            TBTipoSanguineo.Enabled = true;
+            mt.bloquearCheckBoxes(Controls, true);
+            update = true;
         }
     }
 }

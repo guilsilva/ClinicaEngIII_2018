@@ -14,6 +14,18 @@ namespace ClinicaEngIII
         public string Medicamentos { get => Medicamentos; set => Medicamentos = value; }
         public string Alergias { get => Alergias; set => Alergias = value; }
         public string TipoSanguineo { get => TipoSanguineo; set => TipoSanguineo = value; }
-        public string IdAnamnese { get => IdAnamnese; }
+        public int IdAnamnese { get => IdAnamnese; set => IdAnamnese = value; }
+        public int IdPaciente { get => IdPaciente; set => IdPaciente = value; }
+        public Anamnese(string doenca, string drogas, string cirurgias, string medicamentos, string alergias,
+            string tipoSangue, int idPac)
+        {
+            this.Doencas = doenca;
+            this.Drogas = drogas;
+            this.Cirurgias = cirurgias;
+            this.Medicamentos = medicamentos;
+            this.Alergias = alergias;
+            this.TipoSanguineo = tipoSangue;
+            this.IdPaciente = idPac;
+        }
     }
 }

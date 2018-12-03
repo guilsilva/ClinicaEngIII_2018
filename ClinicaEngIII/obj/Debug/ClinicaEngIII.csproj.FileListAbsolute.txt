@@ -13,7 +13,6 @@ C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.Loa
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Medico.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_TrocaSenha.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Anamnese.resources
-C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaAnamnese.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Paciente.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaPaciente.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Materiais.resources
@@ -23,3 +22,5 @@ C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaMedico.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Exame.resources
 C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_Secretaria.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaExame.resources
+C:\Users\Public\Projetos\ClinicaEngIII\ClinicaEngIII\obj\Debug\ClinicaEngIII.FRM_ConsultaSecretaria.resources

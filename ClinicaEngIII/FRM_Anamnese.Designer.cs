@@ -300,6 +300,7 @@
             this.PBConfirmar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBConfirmar.TabIndex = 39;
             this.PBConfirmar.TabStop = false;
+            this.PBConfirmar.Click += new System.EventHandler(this.PBConfirmar_Click);
             // 
             // PBEditar
             // 

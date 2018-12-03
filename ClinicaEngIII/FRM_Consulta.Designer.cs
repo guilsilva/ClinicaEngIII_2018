@@ -50,6 +50,7 @@
             this.PBLimpar = new System.Windows.Forms.PictureBox();
             this.PBEditar = new System.Windows.Forms.PictureBox();
             this.PBPesquisar = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PBVoltar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBCancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBConfirmar)).BeginInit();
@@ -254,12 +255,23 @@
             this.PBPesquisar.TabStop = false;
             this.PBPesquisar.Click += new System.EventHandler(this.PBPesquisar_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(199, 25);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(305, 12);
+            this.label10.TabIndex = 57;
+            this.label10.Text = "Informe o Nome do Paciente e o Nome do Médico para realizar a pesquisa";
+            // 
             // FRM_Consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(535, 360);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.PBVoltar);
             this.Controls.Add(this.PBCancelar);
             this.Controls.Add(this.PBConfirmar);
@@ -320,5 +332,6 @@
         private System.Windows.Forms.PictureBox PBLimpar;
         private System.Windows.Forms.PictureBox PBEditar;
         private System.Windows.Forms.PictureBox PBPesquisar;
+        private System.Windows.Forms.Label label10;
     }
 }

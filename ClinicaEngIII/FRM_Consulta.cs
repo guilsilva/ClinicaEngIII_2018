@@ -91,19 +91,17 @@ namespace ClinicaEngIII
 
         private void PBPesquisar_Click(object sender, EventArgs e)
         {
-            //Se tiver mais de um registro
-            if (false)
+            if (TBNomeMedico.Text == String.Empty || TBNomePaciente.Text == String.Empty)
             {
-                frmConsCons = 
-                    new FRM_ConsultaConsultas(TBNomePaciente.Text.ToString(), TBNomeMedico.Text.ToString());
-                frmConsCons.Show();
-                this.Close();
+                MessageBox.Show("Campos obrigatórios para pesquisa não informados!", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            //Se tiver só um registro só preenche as TextBox
             else
             {
-                mt.AlterarEdicaoTextBoxes(Controls, false);
-                PBEditar.Visible = true;
+                frmConsCons = 
+                    new FRM_ConsultaConsultas(TBNomeMedico.Text.ToString(), TBNomePaciente.Text.ToString());
+                frmConsCons.Show();
+                this.Close();
             }
         }
     }

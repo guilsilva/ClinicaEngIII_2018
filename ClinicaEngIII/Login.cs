@@ -15,5 +15,6 @@ namespace ClinicaEngIII
             this.Nome = nome;
             this.Senha = senha;
         }
+        public Login(){ }
     }
 }
