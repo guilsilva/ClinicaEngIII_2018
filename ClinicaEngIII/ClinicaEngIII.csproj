@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,169 +47,181 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anamnese.cs" />
-    <Compile Include="Consulta.cs" />
-    <Compile Include="Exame.cs" />
-    <Compile Include="FRM_Anamnese.cs">
+    <Compile Include="Model\Anamnese.cs" />
+    <Compile Include="Repository\AnamneseRepository.cs" />
+    <Compile Include="Model\Consulta.cs" />
+    <Compile Include="ConsultorioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultorioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Exame.cs" />
+    <Compile Include="Repository\ConsultaRepository.cs" />
+    <Compile Include="Repository\ExameRepository.cs" />
+    <Compile Include="Repository\MateriaisRepository.cs" />
+    <Compile Include="Repository\SecretariaRepository.cs" />
+    <Compile Include="View\FRM_Anamnese.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_Anamnese.Designer.cs">
+    <Compile Include="View\FRM_Anamnese.Designer.cs">
       <DependentUpon>FRM_Anamnese.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_Consulta.cs">
+    <Compile Include="View\FRM_Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_Consulta.Designer.cs">
+    <Compile Include="View\FRM_Consulta.Designer.cs">
       <DependentUpon>FRM_Consulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_ConsultaConsultas.cs">
+    <Compile Include="View\FRM_ConsultaConsultas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_ConsultaConsultas.Designer.cs">
+    <Compile Include="View\FRM_ConsultaConsultas.Designer.cs">
       <DependentUpon>FRM_ConsultaConsultas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_ConsultaExame.cs">
+    <Compile Include="View\FRM_ConsultaExame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_ConsultaExame.Designer.cs">
+    <Compile Include="View\FRM_ConsultaExame.Designer.cs">
       <DependentUpon>FRM_ConsultaExame.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_ConsultaMateriais.cs">
+    <Compile Include="View\FRM_ConsultaMateriais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_ConsultaMateriais.Designer.cs">
+    <Compile Include="View\FRM_ConsultaMateriais.Designer.cs">
       <DependentUpon>FRM_ConsultaMateriais.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_ConsultaMedico.cs">
+    <Compile Include="View\FRM_ConsultaMedico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_ConsultaMedico.Designer.cs">
+    <Compile Include="View\FRM_ConsultaMedico.Designer.cs">
       <DependentUpon>FRM_ConsultaMedico.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_ConsultaPaciente.cs">
+    <Compile Include="View\FRM_ConsultaPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_ConsultaPaciente.Designer.cs">
+    <Compile Include="View\FRM_ConsultaPaciente.Designer.cs">
       <DependentUpon>FRM_ConsultaPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_ConsultaSecretaria.cs">
+    <Compile Include="View\FRM_ConsultaSecretaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_ConsultaSecretaria.Designer.cs">
+    <Compile Include="View\FRM_ConsultaSecretaria.Designer.cs">
       <DependentUpon>FRM_ConsultaSecretaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_Exame.cs">
+    <Compile Include="View\FRM_Exame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_Exame.Designer.cs">
+    <Compile Include="View\FRM_Exame.Designer.cs">
       <DependentUpon>FRM_Exame.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_login.cs">
+    <Compile Include="View\FRM_login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_login.Designer.cs">
+    <Compile Include="View\FRM_login.Designer.cs">
       <DependentUpon>FRM_login.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_Materiais.cs">
+    <Compile Include="View\FRM_Materiais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_Materiais.Designer.cs">
+    <Compile Include="View\FRM_Materiais.Designer.cs">
       <DependentUpon>FRM_Materiais.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_Medico.cs">
+    <Compile Include="View\FRM_Medico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_Medico.Designer.cs">
+    <Compile Include="View\FRM_Medico.Designer.cs">
       <DependentUpon>FRM_Medico.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_MenuPrincipal.cs">
+    <Compile Include="View\FRM_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_MenuPrincipal.Designer.cs">
+    <Compile Include="View\FRM_MenuPrincipal.Designer.cs">
       <DependentUpon>FRM_MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_Paciente.cs">
+    <Compile Include="View\FRM_Paciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_Paciente.Designer.cs">
+    <Compile Include="View\FRM_Paciente.Designer.cs">
       <DependentUpon>FRM_Paciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_Secretaria.cs">
+    <Compile Include="View\FRM_Secretaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_Secretaria.Designer.cs">
+    <Compile Include="View\FRM_Secretaria.Designer.cs">
       <DependentUpon>FRM_Secretaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRM_TrocaSenha.cs">
+    <Compile Include="View\FRM_TrocaSenha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRM_TrocaSenha.Designer.cs">
+    <Compile Include="View\FRM_TrocaSenha.Designer.cs">
       <DependentUpon>FRM_TrocaSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Load.cs">
+    <Compile Include="View\Load.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Load.Designer.cs">
+    <Compile Include="View\Load.Designer.cs">
       <DependentUpon>Load.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs" />
+    <Compile Include="Model\Login.cs" />
     <Compile Include="ManipulacoesTelas.cs" />
-    <Compile Include="Materiais.cs" />
-    <Compile Include="Medico.cs" />
-    <Compile Include="Paciente.cs" />
+    <Compile Include="Model\Materiais.cs" />
+    <Compile Include="Model\Medico.cs" />
+    <Compile Include="Repository\MedicoRepository.cs" />
+    <Compile Include="Model\Paciente.cs" />
+    <Compile Include="Repository\PacienteRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Secretaria.cs" />
-    <Compile Include="Usuario.cs" />
-    <EmbeddedResource Include="FRM_Anamnese.resx">
+    <Compile Include="Model\Secretaria.cs" />
+    <Compile Include="Model\Usuario.cs" />
+    <EmbeddedResource Include="View\FRM_Anamnese.resx">
       <DependentUpon>FRM_Anamnese.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_Consulta.resx">
+    <EmbeddedResource Include="View\FRM_Consulta.resx">
       <DependentUpon>FRM_Consulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_ConsultaConsultas.resx">
+    <EmbeddedResource Include="View\FRM_ConsultaConsultas.resx">
       <DependentUpon>FRM_ConsultaConsultas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_ConsultaExame.resx">
+    <EmbeddedResource Include="View\FRM_ConsultaExame.resx">
       <DependentUpon>FRM_ConsultaExame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_ConsultaMateriais.resx">
+    <EmbeddedResource Include="View\FRM_ConsultaMateriais.resx">
       <DependentUpon>FRM_ConsultaMateriais.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_ConsultaMedico.resx">
+    <EmbeddedResource Include="View\FRM_ConsultaMedico.resx">
       <DependentUpon>FRM_ConsultaMedico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_ConsultaPaciente.resx">
+    <EmbeddedResource Include="View\FRM_ConsultaPaciente.resx">
       <DependentUpon>FRM_ConsultaPaciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_ConsultaSecretaria.resx">
+    <EmbeddedResource Include="View\FRM_ConsultaSecretaria.resx">
       <DependentUpon>FRM_ConsultaSecretaria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_Exame.resx">
+    <EmbeddedResource Include="View\FRM_Exame.resx">
       <DependentUpon>FRM_Exame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_login.resx">
+    <EmbeddedResource Include="View\FRM_login.resx">
       <DependentUpon>FRM_login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_Materiais.resx">
+    <EmbeddedResource Include="View\FRM_Materiais.resx">
       <DependentUpon>FRM_Materiais.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_Medico.resx">
+    <EmbeddedResource Include="View\FRM_Medico.resx">
       <DependentUpon>FRM_Medico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_MenuPrincipal.resx">
+    <EmbeddedResource Include="View\FRM_MenuPrincipal.resx">
       <DependentUpon>FRM_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_Paciente.resx">
+    <EmbeddedResource Include="View\FRM_Paciente.resx">
       <DependentUpon>FRM_Paciente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_Secretaria.resx">
+    <EmbeddedResource Include="View\FRM_Secretaria.resx">
       <DependentUpon>FRM_Secretaria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRM_TrocaSenha.resx">
+    <EmbeddedResource Include="View\FRM_TrocaSenha.resx">
       <DependentUpon>FRM_TrocaSenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Load.resx">
+    <EmbeddedResource Include="View\Load.resx">
       <DependentUpon>Load.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -220,6 +233,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ConsultorioDataSet.xsc">
+      <DependentUpon>ConsultorioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConsultorioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConsultorioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConsultorioDataSet.xss">
+      <DependentUpon>ConsultorioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\ClinicaEngIII.Repository.MedicoRepository.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -231,7 +256,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

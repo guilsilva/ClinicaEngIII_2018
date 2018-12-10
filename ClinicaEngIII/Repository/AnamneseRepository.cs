@@ -11,7 +11,7 @@ namespace ClinicaEngIII.Repository
 {
     public class AnamneseRepository
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["db_consultorio"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["bd_consultorio"].ConnectionString;
 
         public string PersistAnamnese(Anamnese anamnese)
         {
@@ -24,7 +24,6 @@ namespace ClinicaEngIII.Repository
                 cmd.Connection = con;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "[dbo].[Insert-Anamnese]";
-                cmd.Parameters.AddWithValue("@pk_AnamneseId", anamnese.pk_AnamneseId);
                 cmd.Parameters.AddWithValue("@Doencas", anamnese.Doencas);
                 cmd.Parameters.AddWithValue("@Drogas", anamnese.Drogas);
                 cmd.Parameters.AddWithValue("@Cirurgias", anamnese.Cirurgias);
@@ -41,12 +40,10 @@ namespace ClinicaEngIII.Repository
             catch (Exception)
             {
                 return "Erro!";
-                //throw;
             }
-
         }
 
-        public void SelectAnamnese(Anamnese anamnese)
+        public void SelectAnamnese(string nome, string cpf)
         {
             try
             {
@@ -58,20 +55,20 @@ namespace ClinicaEngIII.Repository
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "[dbo].[Select-Anamnese]";
 
-                cmd.Parameters.AddWithValue("@CPF", anamnese.Cpf);
-                cmd.Parameters.AddWithValue("@Nome", anamnese.Nome);
-
-                SqlDataReader rdr = null;
-                rdr = cmd.ExecuteReader();
-
-                string pk_AnamneseId = rdr["pk_AnamneseId"].ToString();
-                string Doencas = rdr["Doencas"].ToString();
-                string Drogas = rdr["Drogas"].ToString();
-                string Cirurgias = rdr["Cirurgias"].ToString();
-                string Medicamentos = rdr["Medicamentos"].ToString();
-                string Alergias = rdr["Alergias"].ToString();
-                string TipoSanguineo = rdr["TipoSanguineo"].ToString();
-                string fk_PacienteId = rdr["fk_PacienteId"].ToString();
+                cmd.Parameters.AddWithValue("@CPF", cpf);
+                cmd.Parameters.AddWithValue("@Nome", nome);
+                
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    string Doencas = rdr["Doencas"].ToString();
+                    string Drogas = rdr["Drogas"].ToString();
+                    string Cirurgias = rdr["Cirurgias"].ToString();
+                    string Medicamentos = rdr["Medicamentos"].ToString();
+                    string Alergias = rdr["Alergias"].ToString();
+                    string Gravida = rdr["Gravidez"].ToString();
+                    string TipoSanguineo = rdr["TipoSanguineo"].ToString();
+                }
 
                 con.Close();
             }
